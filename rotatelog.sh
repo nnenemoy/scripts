@@ -15,7 +15,7 @@ rotatelog ()
 
 if [ -e $L_FILE ]
 then 
-    REAL_FS=$(wc -c $L_FILE | awk '{print $1}')
+    REAL_FS=$(wc -c "$L_FILE" | awk '{print $1}')
     echo "Размер файла $L_FILE: "$(($REAL_FS)) "байт"
     if [ $REAL_FS -ge $MAX_FS ]
     then
