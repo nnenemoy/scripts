@@ -1,0 +1,1 @@
+find . -type f -exec stat -c %s {} \; | awk '{s+=$1} END {printf "%u\n", s / 1024}'
