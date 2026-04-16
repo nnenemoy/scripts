@@ -9,7 +9,7 @@ rotatelog ()
     for i in {4..1}; do
         mv "$L_FILE."{$i,$((i+1))}
     done
-    mv $L_FILE $L_FILE".1"
+    mv "$L_FILE" "$L_FILE.1"
     touch $L_FILE
 }
 
