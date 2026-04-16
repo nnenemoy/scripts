@@ -1,6 +1,6 @@
 #!/bin/bash
 
-L_FILE="/home/rkhaliulin/ZADANIA/MY/TASK_1/elogs/errors.log"
+L_FILE="errors.log"
 
 MAX_FS=1000000
 
